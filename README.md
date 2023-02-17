@@ -45,5 +45,13 @@ vim .env # Insert your Botfather-generated token and your Telegram user chat id 
 echo "That's my first message!" | python main.py
 ```
 
+## As crontab service
+
+Ubuntu example
+```bash
+SHELL=/usr/bin/zsh
+0 10 * * * source /root/tgnotify/venv/bin/activate && /root/tgnotify/scripts/general_ubuntu.sh | python /root/tgnotify/main.py && deactivate
+```
+
 ## License
 This software is licensed under the WTFPL License. See LICENSE file for more information.
