@@ -40,6 +40,7 @@ Check the `scripts` folder for some examples!
 python -m pip install virtualenv
 python -m virtualenv venv
 source ./venv/bin/activate
+python -m pip install -r requirements.txt
 cp .env.example .env
 vim .env # Insert your Botfather-generated token and your Telegram user chat id here!
 echo "That's my first message!" | python main.py
