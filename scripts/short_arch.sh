@@ -3,7 +3,7 @@
 pacman -Sy &> /dev/null
 
 echo "$(uname -n): $(uptime --pretty)"
-echo "Updates available ($(pacman -Qu | wc -l)):\n\n$(pacman -Qu)"
+echo "Updates available: $(pacman -Qu | wc -l)"
 
 ALERT=90
 df -H | grep -vE '^Filesystem|tmpfs|cdrom|overlay' | awk '{ print $5 " " $1 }' | while read -r output;
