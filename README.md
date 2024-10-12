@@ -51,7 +51,7 @@ echo "That's my first message\!" | python main.py
 Ubuntu example
 ```bash
 SHELL=/usr/bin/zsh
-0 10 * * * source /root/tgnotify/venv/bin/activate && /root/tgnotify/scripts/general_ubuntu.sh | python /root/tgnotify/main.py && deactivate
+0 10 * * * source /root/tgnotify/venv/bin/activate && /root/tgnotify/scripts/short_arch.sh | python /root/tgnotify/main.py && deactivate
 ```
 
 ## License
