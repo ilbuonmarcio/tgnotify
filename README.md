@@ -27,7 +27,7 @@ yay -Sy &> /dev/null && yay -Qu | python main.py
 ```
 #### For getting a notification about your server up and running
 ```bash
-echo "$ (hostname) is up and running\!" | python main.py
+echo "$(hostname) is up and running\!" | python main.py
 ```
 
 **...or simply everything you can pipe!**
@@ -43,7 +43,7 @@ source ./venv/bin/activate
 python -m pip install -r requirements.txt
 cp .env.example .env
 vim .env # Insert your Botfather-generated token and your Telegram user chat id here!
-echo "That's my first message!" | python main.py
+echo "That's my first message\!" | python main.py
 ```
 
 ## As crontab service
